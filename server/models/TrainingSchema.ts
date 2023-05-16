@@ -1,8 +1,8 @@
 import { Schema, model } from 'mongoose'
 
 const TrainingSchema = new Schema({
-    id: String,
-    name: {
+    name: String,
+    image: {
         url: String,
         alt: String
     },
