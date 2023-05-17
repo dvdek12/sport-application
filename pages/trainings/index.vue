@@ -8,7 +8,9 @@ const { data } = await useFetch(() => `/api/trainings`, {
   }
 })
 
-
+useHead({
+  title: 'Trainings'
+})
 
 
 
@@ -16,8 +18,8 @@ const { data } = await useFetch(() => `/api/trainings`, {
 </script>
 
 <template>
-  <div class="flex justify-center items-center bg-gray-800 h-screen">
-    <div class="w-1/2 grid grid-cols-2 gap-12 justify-items-center">
+  <div class="flex justify-center items-center bg-gray-800">
+    <div class="w-1/2 h-full grid grid-cols-2 gap-12 justify-items-center">
       <Training 
         v-for="training in data.trainings" :key="training.id"
         :training="training"

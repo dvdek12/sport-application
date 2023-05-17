@@ -8,6 +8,7 @@ const TrainingSchema = new Schema({
     },
     favourite: Boolean,
     length: Number,
+    isPopular: Number,
     objective: String,
     requirements: Array<String>,
     caloriesBurn: Number,

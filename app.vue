@@ -11,7 +11,9 @@
 
 
 useHead({
-  title: 'Sport Tracker',
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - Sport Tracker` : 'Sport Tracker'
+  },
   meta: [
     {
       name: 'description',

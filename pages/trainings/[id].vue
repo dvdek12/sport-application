@@ -17,4 +17,8 @@ const { data } = await useFetch(() => `/api/trainings/${route.params.id}`, {
   }
 })
 
+useHead({
+  title: data.value.training.name
+})
+
 </script>
